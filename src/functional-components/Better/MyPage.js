@@ -19,6 +19,10 @@ const MyPage = () =>
           <AwesomeProducts/>
           <Header as="h2">Source code:</Header>
           <Header as="h3">AwesomeProducts.js</Header>
+          <Header as="h3">MyPage.js</Header>
+          <SyntaxHighlighter language="javascript" style={style}>
+            {code}
+          </SyntaxHighlighter>
           <SyntaxHighlighter language="javascript" style={style}>
             {AwesomeProducts.code}
           </SyntaxHighlighter>
@@ -32,5 +36,5 @@ const MyPage = () =>
 export default MyPage;
 
 /* EXCLUDE */
-AwesomeProducts.code = ownCode.replace(/(\/\*\sEXCLUDE\s\*\/[\W\w]*\/\*\s\/EXCLUDE\s\*\/)|([\n]*import\sownCode.*\n)|([\n]*\/\/\seslint-disable.*\n)/g, '');
+export const code = ownCode.replace(/(\/\*\sEXCLUDE\s\*\/[\W\w]*\/\*\s\/EXCLUDE\s\*\/)|([\n]*import\sownCode.*\n)|([\n]*\/\/\seslint-disable.*\n)/g, '');
 /* /EXCLUDE */

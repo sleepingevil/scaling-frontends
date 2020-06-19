@@ -21,6 +21,10 @@ const MyPage = () => {
         </Container>
         <Container className="body">
           <AwesomeProducts {...productsProps} />
+          <Header as="h3">MyPage.js</Header>
+          <SyntaxHighlighter language="javascript" style={style}>
+            {code}
+          </SyntaxHighlighter>
           <Header as="h3">AwesomeProducts.js</Header>
           <SyntaxHighlighter language="javascript" style={style}>
             {AwesomeProducts.code}
