@@ -16,7 +16,11 @@ const MyPage = () =>
           </Header>
         </Container>
         <Container className="body">
+
+          {/* RENDER PRODUCTS HERE */}
           <AwesomeProducts/>
+
+          {/* RENDER SOURCE CODE HERE */}
           <Header as="h2">Source code:</Header>
           <Header as="h3">AwesomeProducts.js</Header>
           <Header as="h3">MyPage.js</Header>

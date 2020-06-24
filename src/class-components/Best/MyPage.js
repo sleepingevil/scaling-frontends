@@ -24,12 +24,16 @@ class MyPage extends React.Component {
           </Header>
         </Container>
         <Container className="body">
+
+          {/* RENDER PRODUCTS HERE */}
           <ConnectedAwesomeProducts />
+          
+          {/* RENDER SOURCE CODE HERE */}
           <Header as="h3">MyPage.js</Header>
           <SyntaxHighlighter language="javascript" style={style}>
             {code}
           </SyntaxHighlighter>
-          <Header as="h3">hook/withProducts.js</Header>
+          <Header as="h3">higher-order-components/withProducts.js</Header>
           <SyntaxHighlighter language="javascript" style={style}>
             {withProductsCode}
           </SyntaxHighlighter>

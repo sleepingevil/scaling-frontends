@@ -20,7 +20,11 @@ const MyPage = () => {
           </Header>
         </Container>
         <Container className="body">
+
+          {/* RENDER PRODUCTS HERE */}
           <AwesomeProducts {...productsProps} />
+
+          {/* RENDER SOURCE CODE HERE */}
           <Header as="h3">MyPage.js</Header>
           <SyntaxHighlighter language="javascript" style={style}>
             {code}

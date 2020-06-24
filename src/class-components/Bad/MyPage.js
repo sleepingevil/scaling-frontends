@@ -3,6 +3,7 @@ import AwesomeProducts from "./AwesomeProducts";
 import { Container, Header, Label } from "semantic-ui-react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { xonokai as style } from "react-syntax-highlighter/dist/esm/styles/prism";
+
 // eslint-disable-next-line import/no-webpack-loader-syntax
 import ownCode from '!!raw-loader!./MyPage.js';
 
@@ -19,7 +20,11 @@ class MyPage extends React.Component {
           </Header>
         </Container>
         <Container className="body">
+
+          {/* RENDER PRODUCTS HERE */}
           <AwesomeProducts />
+          
+          {/* RENDER COURCE CODE HERE */}
           <Header as="h3">MyPage.js</Header>
           <SyntaxHighlighter language="javascript" style={style}>
             {code}

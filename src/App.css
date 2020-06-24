@@ -1,4 +1,12 @@
+html,
+body {
+  font-size: 18px;
+}
 .App {
   padding-left: 15rem;
   background-color: #eee;
+}
+
+code {
+  font-size: 16px !important;
 }

@@ -20,7 +20,15 @@ class MyPage extends React.Component {
           </Header>
         </Container>
         <Container className="body">
+
+          {/* RENDER PRODUCTS HERE */}
           <AwesomeProducts />
+
+          {/* RENDER SOURCE CODE HERE */}
+          <Header as="h3">MyPage.js</Header>
+          <SyntaxHighlighter language="javascript" style={style}>
+            {code}
+          </SyntaxHighlighter>
           <Header as="h3">AwesomeProducts.js</Header>
           <SyntaxHighlighter language="javascript" style={style}>
             {AwesomeProducts.code}
