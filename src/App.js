@@ -53,40 +53,40 @@ function App() {
           <Menu.Item as="h1">
             Class
             <Menu.Menu>
-              <Menu.Item><Link as="h2" to="/scaling-frontends/docs/class/bad">Bad</Link></Menu.Item>
-              <Menu.Item><Link as="h2" to="/scaling-frontends/docs/class/better">Better</Link></Menu.Item>
-              <Menu.Item><Link as="h2" to="/scaling-frontends/docs/class/best">Best</Link></Menu.Item>
+              <Menu.Item><Link as="h2" to="/scaling-frontends/class/bad">Bad</Link></Menu.Item>
+              <Menu.Item><Link as="h2" to="/scaling-frontends/class/better">Better</Link></Menu.Item>
+              <Menu.Item><Link as="h2" to="/scaling-frontends/class/best">Best</Link></Menu.Item>
             </Menu.Menu>
           </Menu.Item>
           <Menu.Item as="h1">
             Functional
             <Menu.Menu>
-              <Menu.Item><Link as="h2" to="/scaling-frontends/docs/functional/bad">Bad</Link></Menu.Item>
-              <Menu.Item><Link as="h2" to="/scaling-frontends/docs/functional/better">Better</Link></Menu.Item>
-              <Menu.Item><Link as="h2" to="/scaling-frontends/docs/functional/best">Best</Link></Menu.Item>
+              <Menu.Item><Link as="h2" to="/scaling-frontends/functional/bad">Bad</Link></Menu.Item>
+              <Menu.Item><Link as="h2" to="/scaling-frontends/functional/better">Better</Link></Menu.Item>
+              <Menu.Item><Link as="h2" to="/scaling-frontends/functional/best">Best</Link></Menu.Item>
             </Menu.Menu>
           </Menu.Item>
         </Menu>
         <Switch>
-          <Route path="/scaling-frontends/docs/class/bad">
+          <Route path="/scaling-frontends/class/bad">
             <BadClassPage />
           </Route>
-          <Route path="/scaling-frontends/docs/class/better">
+          <Route path="/scaling-frontends/class/better">
             <BetterClassPage />
           </Route>
-          <Route path="/scaling-frontends/docs/class/best">
+          <Route path="/scaling-frontends/class/best">
             <BestClassPage />
           </Route>
-          <Route path="/scaling-frontends/docs/functional/bad">
+          <Route path="/scaling-frontends/functional/bad">
             <BadFunctionalPage />
           </Route>
-          <Route path="/scaling-frontends/docs/functional/better">
+          <Route path="/scaling-frontends/functional/better">
             <BetterFunctionalPage />
           </Route>
-          <Route path="/scaling-frontends/docs/functional/best">
+          <Route path="/scaling-frontends/functional/best">
             <BestFunctionalPage />
           </Route>
-          <Redirect to="/scaling-frontends/docs/class/bad" />
+          <Redirect to="/scaling-frontends/class/bad" />
         </Switch>
       </BrowserRouter>
     </div>
